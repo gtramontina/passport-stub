@@ -22,7 +22,7 @@ describe 'GET /admin', ->
 
   it 'responds with 200 when logged in', (done) ->
     passportStub.login username: 'john.doe'
-  req.get('/admin').expect(200).end done
+    req.get('/admin').expect(200).end done
 ```
 The user you log in with can be whatever user your app would expect to deal with. It could be a mongoose model, for example.
 
