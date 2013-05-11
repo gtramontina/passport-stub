@@ -23,9 +23,8 @@ exports.install = (@app, @active = yes) -> @app.stack.unshift
 
 exports.uninstall = ->
   return unless @app?
-  index = null
-  @app.stack.forEach (m, i) -> index = i if m._id is 'passport.stub'
-  @app.stack.splice index, 1 if index?
+  @app.stack.forEach (middleware, index, stack) ->
+    stack.splice index, 1 if middleware._id is 'passport.stub'
 
 exports.login = (user) ->
   throw 'Passport Stub not installed.
