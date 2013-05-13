@@ -12,7 +12,7 @@ passportStub = (req, res, next) =>
   req.__defineGetter__ 'user', => @user
   next()
 
-exports.install = (@app, @active = no) -> @app.stack.unshift
+exports.install = (@app) -> @app.stack.unshift
   route: ''
   handle: passportStub
   _id: 'passport.stub'

@@ -27,7 +27,7 @@ describe 'GET /admin', ->
 The user you log in with can be whatever user your app would expect to deal with. It could be a mongoose model, for example.
 
 ## Functions
- - `.install(app[, active = true])`
+ - `.install(app)`
  - `.uninstall()`
  - `.login(user)`
  - `.logout()`
