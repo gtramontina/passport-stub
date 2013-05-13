@@ -31,8 +31,6 @@ The user you log in with can be whatever user your app would expect to deal with
  - `.uninstall()`
  - `.login(user)`
  - `.logout()`
- - `.activate()`
- - `.deactivate()`
 
 ## Notes
 Although I didn't use, I've included a few other functions that might be useful. The code itself is pretty simple, so take a look at it.
