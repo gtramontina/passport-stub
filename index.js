@@ -1,3 +1,2 @@
-require('coffee-script'); // Patch require to allow CoffeeScript files.
-
+require('coffee-script');
 module.exports = require('./lib');
