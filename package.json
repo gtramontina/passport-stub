@@ -8,6 +8,6 @@
   "repository"     : "git://github.com/gtramontina/passport-stub.git",
   "main"           : "index.js",
   "dependencies"   : {
-    "coffee-script": "1.6"
+    "coffee-script": "1.7"
   }
 }
