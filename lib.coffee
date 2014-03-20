@@ -1,4 +1,4 @@
-done = (user, req, next) -> next null, user
+done = (user, next) -> next null, user
 passportStub = (req, res, next) =>
   return next() unless @active
   passport =
