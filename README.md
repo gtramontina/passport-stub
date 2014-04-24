@@ -37,10 +37,17 @@ Although I didn't use, I've included a few other functions that might be useful.
 
 This module was written in coffee because that was what I was currently using in a project. Feel free to suggest improvements and even a rewrite in javascript.
 
+### Versions
+`passport-stub`'s versions are not backwards compatible, so check this list out (hopefully it won't grow any longer):
+
+* For `passport#<0.2.0`, use `passport-stub#0.1.x`;
+* For `passport#>=0.2.0` and `express#<4.0.0`, use `passport-stub#0.2.0`;
+* For `express#>=4.0.0` and `passport#>=0.2.0`, use `passport-stub#1.0.0`;
+* Phew!
+
+Bottom line: try to keep your deps updated. :-)
 
 ## License
 This is licensed under the feel-free-to-do-whatever-you-want-to-do license.
 
-
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/gtramontina/passport-stub/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
