@@ -12,14 +12,15 @@ passportStub = (req, res, next) =>
   req.__defineGetter__ 'user', => @user
   next()
 
-exports.install = (@app) -> @app.stack.unshift
-  route: ''
+exports.install = (@app) -> @app._router.stack.unshift
+  match: -> yes
+  path: ''
   handle: passportStub
   _id: 'passport.stub'
 
 exports.uninstall = ->
   return unless @app?
-  @app.stack.forEach (middleware, index, stack) ->
+  @app._router.stack.forEach (middleware, index, stack) ->
     stack.splice index, 1 if middleware._id is 'passport.stub'
 
 exports.login = (user) ->
