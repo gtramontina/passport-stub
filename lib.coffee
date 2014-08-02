@@ -16,6 +16,7 @@ exports.install = (@app) -> @app._router.stack.unshift
   match: -> yes
   path: ''
   handle: passportStub
+  handle_request: passportStub
   _id: 'passport.stub'
 
 exports.uninstall = ->
