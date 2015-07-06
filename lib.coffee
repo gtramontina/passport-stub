@@ -10,6 +10,7 @@ passportStub = (req, res, next) =>
     instance: passport
     session : user: @user
   req.__defineGetter__ 'user', => @user
+  req.__defineSetter__ 'user', (val) => @user = val
   next()
 
 exports.install = (@app) -> @app._router.stack.unshift
