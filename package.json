@@ -1,13 +1,17 @@
 {
   "name"           : "passport-stub",
-  "version"        : "1.0.1",
+  "version"        : "1.1.0",
   "description"    : "Passport.js stub for testing.",
 
   "keywords"       : ["passport", "stub", "test"],
   "author"         : "Guilherme J. Tramontina <guilherme.tramontina@gmail.com>",
   "repository"     : "git://github.com/gtramontina/passport-stub.git",
-  "main"           : "index.js",
-  "dependencies"   : {
+  "main"           : "lib/passport-stub.js",
+  "devDependencies": {
     "coffee-script": "1.7"
+  },
+  "scripts"        : {
+    "build"        : "coffee --compile --output lib/ src/",
+    "prepublish"   : "npm run build"
   }
 }
