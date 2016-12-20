@@ -5,7 +5,7 @@ Passport.js stub for testing – Based on Jonathon Kresner's ([@jkresner](https:
 Written with the idea of being simple to use.
 
 ## Usage
-I've been writing my [Express](http://expressjs.com/) API tests with [Mocha](http://visionmedia.github.io/mocha/) and [Supertest](https://github.com/visionmedia/supertest), so here is an example:
+I've been writing my [Express](http://expressjs.com/) API tests with [Mocha](http://mochajs.org/) and [Supertest](https://github.com/visionmedia/supertest), so here is an example:
 
 ```coffeescript
 passportStub = require 'passport-stub'
