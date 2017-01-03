@@ -13,6 +13,8 @@ passportStub = (req, res, next) =>
   req.__defineSetter__ 'user', (val) => @user = val
   next()
 
+exports.use = (@app) -> @app.use(passportStub)
+
 exports.install = (@app) -> @app._router.stack.unshift
   match: -> yes
   path: ''
