@@ -1,0 +1,11 @@
+{
+  "env": {
+    "node": true
+    },
+  "extends": "airbnb-base",
+  "rules": {
+    "complexity": 2,
+    "max-statements": [ "error", 15 ],
+    "no-underscore-dangle": 0
+  }
+}
